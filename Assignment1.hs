@@ -1,8 +1,3 @@
--- Do not alter the following line
-module Assignment1 (char_to_int, repeat_char, decode, int_to_char, length_char, drop_char, encode, complex_encode, complex_decode) where
-
-
--- Part A
 
 char_to_int :: Char -> Integer
 -- A function which converts a character into an integer.
@@ -21,12 +16,6 @@ char_to_int x
     | otherwise = 123456 -- Consider it as 'stub' case
 
 repeat_char :: Char -> Integer -> String
--- This is the base case. While the recursive function
--- (or if the user enters '0') decreases 'n' by 1 and reaches 0,
--- the function returns a spring with the characters. 
--- Simple encoding allows values from 0 to 9 so if the user
--- enters a value greater than 9, the function will return an 
--- a string with 9 characters.
 repeat_char _ 0 = ""
 repeat_char c n 
     | c == ' ' = ""
@@ -45,8 +34,6 @@ decode (head:int:rest) =
     in
         --(or repeat_char head numb)
         rep ++ decode rest    
-
--- Part B
 
 int_to_char :: Integer -> Char
 -- A function which converts a integer into an character.
