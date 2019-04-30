@@ -1,3 +1,3 @@
-# COMP105_A1
-Haskell First assignment 
-## Assignment description
+# Encoder_Decoder
+Language used:
+Haskell
